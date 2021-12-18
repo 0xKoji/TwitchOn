@@ -1,4 +1,3 @@
-var check = true
 var collected = 0
 
 function clickPoint() {
@@ -14,16 +13,11 @@ function clickPoint() {
 
 function main(){
     setTimeout(function(){
-        if(check === true){
-            console.log('enabled')
-            var loop = window.setInterval(function(){
-                clickPoint();
-            }, 5000)
-        }else{
-            clearInterval(loop)
-            console.log('disabled')
-        }
-    }, 10000);
+        console.log("Enabled")
+        var loop = window.setInterval(function(){
+            clickPoint();
+        }, 5000)
+    }, 3000);
 }
 
 main()
