@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "TwitchOn",
+    "version": "0.1",
+  
+    "description": "Twitch Addon",
+
+    "icons": {
+        "48": "img/48.png"
+    }, 
+  
+    "browser_action": {
+        "default_icon": {
+            "48": "img/48.png"
+        },
+        "default_title": "TwitchOn"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.twitch.tv/*"],
+        "js": ["main.js"]
+      }
+    ]
+  
+}
+  
